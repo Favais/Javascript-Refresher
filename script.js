@@ -120,6 +120,7 @@ form.addEventListener("submit", (e) => {
 
     data.push(reviewData)
     form.reset()
+    reviewHead.innerHTML = ''
     showReviews()
     reviews.scrollTop = reviews.scrollHeight;
 })
