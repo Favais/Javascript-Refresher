@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Review App</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header>
+        <h1 class="header">Book Review App</h1>
+    </header>
+
+    <section>
+        <div class="card">
+            <div class="left">
+                <img src="./book1.jpeg" alt="">
+                <div class="description">
+                    <h2 id="title" class="title">The wretched of the earth</h2>
+                    <h3 class="author">Franc Fanon</h3>
+                    <p class="about">Written at the height of the Algerian war for independence from French colonial
+                        rule and first published in 1961, Frantz
+                        Fanon’s Wretched of the Earth has provided inspiration for anti-colonial movements ever since,
+                        analysing the role of
+                        class, race, national culture and violence in the struggle for freedom. With power and anger,
+                        Fanon makes clear the
+                        economic and psychological degradation inflicted by imperialism. It was Fanon, himself a
+                        psychotherapist, who exposed
+                        the connection between colonial war and mental disease, who showed how the fight for freedom
+                        must be combined with
+                        building a national culture, and who showed the way ahead, through revolutionary violence, to
+                        socialism.</p>
+                </div>
+            </div>
+            <div class="right">
+                <h2 id="reviewHead" class="review">Reviews</h2>
+                <div class="filter">
+                    <div id="upvote">Show up votes</div>
+                    <div id="downvote">Show down votes </div>
+                </div>
+                <div id="reviews" class="reviews">
+                </div>
+                <form id="addreview" class="addReview">
+                    <textarea name="review" placeholder="Add a review" id="add-text"></textarea>
+                    <input type="checkbox" name="status" id="status">
+                    <label for="status">Finished Reading</label>
+                    <select name="rating" id="rating">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                    </select>
+                    <label for="rating">Rating</label>
+                    <button type="submit" id="submit" class="submit-button">Submit</button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+
+</html>
